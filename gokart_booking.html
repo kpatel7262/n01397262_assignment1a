@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Go kart Booking Form</title>
+</head>
+<body>
+    <form action="https://postman-echo.com" method="post">
+        <section>
+            <h1>Go Kart Registration</h1>
+        </section>
+        <section>
+            <div>
+                <label>Enter Your First Name:</label>
+                <input type="text" id="driverFirstName" name="driverFirstName" />
+            </div>
+            <div>
+                <label>Enter Your Last Name:</label>
+                <input type="text" id="driverLastName" name="driverLastName" />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" id="driverEmail" name="driverEmail" />
+            </div>
+            <div>
+                <label>Phone:</label>
+                <input type="text" id="driverPhone" />
+            </div>
+            <div>
+                <label>Approx number of drivers:</label>
+                <input type="text" id="driverCount" name="driverCount" />
+            </div>
+        </section>
+        <section>
+            <h2>Location</h2>
+            <select id="kartingLocation" name="kartingLocation">
+                <option value="toronto">Toronto</option>
+                <option value="mississauga">Mississauga</option>
+                <option value="etobicoke">Etobicoke</option>
+            </select>
+        
+            <section>
+                <h2>Food required?</h2>
+                <div>
+                    <input type="radio" id="foodRequirementYes" name="foodRequirement" value="yes"><label for="food_option1">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="foodRequirementNo" name="foodRequirement" value="no"><label for="food_option2">No</label>
+                </div>
+            </section>
+
+            <section>
+                <h2>Day or Evening Event</h2>
+                    <div>
+                        <input type="radio" id="eventDay" name="eventShift" value="eventDay"><label for="eventDay">Day</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="eventEvening" name="eventShift" value="eventEvening"><label for="eventEvening">Evening</label>
+                    </div>
+            </section>
+        </section>
+        <section>
+            <h2>Participation Mode</h2>
+            <input type="checkbox" id="singleParticipate" name="singleParticipate" value="single"><label>Single</label>
+            <input type="checkbox" id="groupParticipate" name="groupParticipate" value="group"><label>In Group</label>
+        </section>
+        <section>
+            <h2>Add-ons</h2>
+            <input type="checkbox" id="addOnsOption1" name="addOnsOption1" value="noAddons"><label>None, just karting</label>
+            <input type="checkbox" id="addOnsOption2" name="addOnsOption2" value="trophy"><label>Trophy for winner</label>
+            <input type="checkbox" id="addOnsOption3" name="addOnsOption3" value="Catering"><label>Catering</label>
+        </section>
+        <section>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </section>
+    </form>
+</body>
+</html>
